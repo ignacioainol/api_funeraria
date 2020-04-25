@@ -4,7 +4,7 @@ const pool = new Pool({
     user: "exgqaeel",
     host: "drona.db.elephantsql.com",
     database: "exgqaeel",
-    password: "w3eQKuZ10YV7ca7v5b2gQRZQztxoBl5B"
+    password: "Xdwn7HHszO5V4Le-vE-PMdeFyrwflBkQ"
 });
 
 const connecting = async () => {
@@ -13,3 +13,4 @@ const connecting = async () => {
 };
 
 exports.connecting = connecting;
+
