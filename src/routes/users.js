@@ -18,13 +18,18 @@ router.post('/', async (req, res) => {
 
 });
 
-// router.get('/', async (req, res) => {
-//     try {
-//         // const users = await userModel.getAll();
-//     } catch (error) {
-//         res.status(500).send(error);
-//     }
-// })
+
+/** 
+ * Get all users registered 
+ * */
+router.get('/', async (req, res) => {
+    try {
+        const users = await userModel.getAll();
+        res.status(200).send(users);
+    } catch (error) {
+        res.status(500).send(error);
+    }
+})
 
 
 

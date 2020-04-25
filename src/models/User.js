@@ -18,6 +18,20 @@ const save = async (user) => {
     }
 }
 
+const getAll = async () => {
+    const connection = await connecting();
+    try {
+        const query = `SELECT * FROM users`;
+        const result = await connection.query(query);
+        return result.rows;
+    } catch (error) {
+        throw { error }
+    } finally {
+        connection.release();
+    }
+}
+
 module.exports = {
-    save
+    save,
+    getAll
 }
