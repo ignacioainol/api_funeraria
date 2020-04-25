@@ -2,6 +2,9 @@ const express = require('express');
 const router = express.Router();
 const userModel = require('../models/User');
 
+/**
+ * Add new user
+ */
 router.post('/', async (req, res) => {
     try {
         const { body: user } = req;
@@ -14,5 +17,15 @@ router.post('/', async (req, res) => {
     }
 
 });
+
+router.get('/', async (req, res) => {
+    try {
+        // const users = await userModel.getAll();
+    } catch (error) {
+        res.status(500).send(error);
+    }
+})
+
+
 
 module.exports = router;
