@@ -18,13 +18,13 @@ router.post('/', async (req, res) => {
 
 });
 
-router.get('/', async (req, res) => {
-    try {
-        // const users = await userModel.getAll();
-    } catch (error) {
-        res.status(500).send(error);
-    }
-})
+// router.get('/', async (req, res) => {
+//     try {
+//         // const users = await userModel.getAll();
+//     } catch (error) {
+//         res.status(500).send(error);
+//     }
+// })
 
 
 
